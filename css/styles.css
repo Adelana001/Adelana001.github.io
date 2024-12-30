@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/alex-perez-pEgsWN0kwbQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    height: 100vh
+}
+
+h1 {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+/* uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+blockquote {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+    width: 30%;
+}
+
+section:nth-of-type(2) {
+    background-color: #5C0137;
+}
+
+section:nth-of-type(3) {
+    background-color: #104948;
+}
+
+.portfolio article {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.portfolio img {
+    flex: 1 1 3%;
+}
