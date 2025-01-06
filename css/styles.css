@@ -69,6 +69,7 @@ img {
 
 .portfolio {
     position: relative;
+    z-index: 1;
 }
 
 section:nth-of-type(2) {
@@ -80,9 +81,12 @@ section:nth-of-type(3) {
 }
 
 .portfolio article {
+    display: none;
     position: absolute;
     left: 0;
     right: 0 ;
+    z-index: -1;
+    justify-content: space-evenly;
     margin-left: 5%;
     max-width: 95%;
 }
@@ -90,15 +94,13 @@ section:nth-of-type(3) {
 .portfolio h2, .portfolio::after {
     font-family: "Londrina Shadow", serif;
     font-size: 5rem;
-}
-
-.portfolio h2 {
     font-weight: 400;
 }
 
-.portfolio article {
-    display: none;
-    justify-content: space-evenly;
+.portfolio p {
+    position: absolute;
+    bottom: 1rem;
+    width: 50.25rem;
 }
 
 .frame.current-slide {
