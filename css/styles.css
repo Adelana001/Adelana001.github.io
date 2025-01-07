@@ -68,16 +68,19 @@ img {
 }
 
 .portfolio {
+    background-image: linear-gradient(to bottom, #000000 2%, var(--bg-color-trans) 2%, var(--bg-color) 98%, #000000 100%);
     position: relative;
     z-index: 1;
 }
 
 section:nth-of-type(2) {
-    background-color: #5C0137;
+    --bg-color-trans: rgba(92, 1, 55, 0.5);
+    --bg-color: #5C0137;
 }
 
 section:nth-of-type(3) {
-    background-color: #104948;
+    --bg-color-trans: rgb(16, 73, 72, 0.5);
+    --bg-color: #104948;
 }
 
 .portfolio article {
@@ -97,10 +100,25 @@ section:nth-of-type(3) {
     font-weight: 400;
 }
 
+.portfolio h2, .portfolio p {
+    margin-left: 5%;
+}
+
+.portfolio::after {
+    content: 'PORTFOLIO';
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    margin-right: 5%;
+    transform: rotateX(180deg);
+}
+
 .portfolio p {
+    font-style: italic;
     position: absolute;
     bottom: 1rem;
-    width: 50.25rem;
+    right: 50.25rem;
 }
 
 .frame.current-slide {
@@ -137,16 +155,6 @@ section:nth-of-type(3) {
     position: absolute;
     bottom: -4rem;
 }
-
-.portfolio::after {
-    content: 'PORTFOLIO';
-    color: white;
-    position: absolute;
-    bottom: 0;
-    right: 1rem;
-    transform: rotateX(180deg);
-}
-
 
 .frame-photo {
     border: 1.5rem solid rgba(0, 0, 0, 0.3);
