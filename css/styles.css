@@ -18,7 +18,10 @@ body {
 
 .hero {
     text-align: center;
+    padding: 5rem;
 }
+
+.hero > *:not(blockquote)  { margin-bottom: 1rem; }
 
 h1, .headline {
     font-family: "Kaushan Script", serif;
@@ -160,6 +163,16 @@ section:nth-of-type(3) {
     border: 1.5rem solid rgba(0, 0, 0, 0.3);
     border-radius: 50px;
     overflow: hidden;
+}
+
+footer {
+    padding: 1rem;
+}
+
+footer a { color: white;}
+footer li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
 }
 
 @keyframes slide-frame {
