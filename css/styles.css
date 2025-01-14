@@ -71,19 +71,24 @@ img {
 }
 
 .portfolio {
-    background-image: linear-gradient(to bottom, #000000 2%, var(--bg-color-trans) 2%, var(--bg-color) 98%, #000000 100%);
+    background-image: linear-gradient(
+        to bottom, #00000000 0, 
+        var(--bg-color-trans) 5px, var(--bg-color) 4%,
+        var(--bg-color) 96%, var(--bg-color-trans) calc(100% - 5px),
+        #00000000 100%
+        );
     position: relative;
     z-index: 1;
 }
 
 section:nth-of-type(2) {
     --bg-color-trans: rgba(92, 1, 55, 0.5);
-    --bg-color: #5C0137;
+    --bg-color: #5C0137f5;
 }
 
 section:nth-of-type(3) {
     --bg-color-trans: rgb(16, 73, 72, 0.5);
-    --bg-color: #104948;
+    --bg-color: #104948f5;
 }
 
 .portfolio article {
@@ -169,10 +174,16 @@ footer {
     padding: 1rem;
 }
 
+footer ul {
+    width: max-content;
+    margin: 0 auto;
+}
+
 footer a { color: white;}
 footer li {
+    display: inline;
     list-style-type: none;
-    margin-bottom: 0.5rem;
+    margin-right: 2rem;
 }
 
 @keyframes slide-frame {
